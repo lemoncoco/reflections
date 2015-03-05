@@ -4,3 +4,26 @@ When you initialize a repository a .git file is creted which will store meta dat
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 It is a middle step between working directory and the repository. It offers a temporary place for files which are about to be commited.
 
+How can you use the staging area to make sure you have one commit per logical change?
+You can use git diff without arguments to compare working directory to the staging area and git diff --staged to compare staging area to the newest commit. When you want to commit a file that you changed (after each logical change) you first add it to the staging area with the command "git add" and after that you can commit it with the command "git commit".
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+"git branch" command shows branches that exist
+"git branch ARGUMENT", e.g. "git branch easy-mode" it creates a new branch with the name "easy-mode".
+E.g. if you are making a game and you would have an "easy mode" version, it would be helpful t create a new branch consisting of code for the easy mode.
+
+How do the diagrams help you visualize the branch structure?
+It's like creating a family tree.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+ Combining (merging) two branches
+ Restore your files to their state before you started the merge by running git merge --abort
+ "git merge master coins" , first argument is the new master branch and the second argument is the branch you want to merge. merging coins branch into master branch
+git branch -d coins (deletes the branch coins)
+
+The result of merging wo branches is a new ranch containing all changes made in two branches.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+manual merges need feedback from people that made previous changes (e.g. made a for loop in a function)
+
