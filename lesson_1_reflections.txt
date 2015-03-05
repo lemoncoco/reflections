@@ -7,6 +7,26 @@ git status
 git reset If you accidentally add a file to the staging area, you can remove it using git reset. For example, if you accidentally add lesson_2_reflections.txt, but don’t want it to be committed yet, run git reset lesson_2_reflections.txt and the file will be removed from the staging area, but it will still be in your working directory.
 git add -> you can add a separate file to the staging area, after that when you commit all files from staging are transfered to the repository
 
+git diff without arguments compares working directory and staging area
+git dif -- staged -> compares staging area and repository
+
+"git branch" command shows branches that exist
+"git branch ARGUMENT", e.g. "git branch easy-mode" it creates a new branch with the name "easy-mode".
+E.g. if you are making a game and you would have an "easy mode" version, it would be helpful t create a new branch consisting of code for the easy mode.
+
+"git merge master coins" merging coins branch into master branch
+
+Restore your files to their state before you started the merge by running git merge --abort
+
+git show COMMIT_ID -> shows the differencies between a commit and its parent
+
+git branch -d coins (deletes the branch coins)
+
+
+git remote -> check whether there are remote repositories
+git remote add origin https://github.com/lemoncoco/reflections.git -> it creates a remote repository
+git remote -v (-v = verbose) -> it outputs more detiled data, e.g. urls for pushing and fetching data
+
 
 How did viewing a diff between two versions of a file help you see the bug that was introduced?
 Finding a difference between two files is a great tool to spot mistakes one might have made in a newer version of a file. 
