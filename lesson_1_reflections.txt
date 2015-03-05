@@ -28,6 +28,10 @@ git remote add origin https://github.com/lemoncoco/reflections.git -> it creates
 git remote -v (-v = verbose) -> it outputs more detiled data, e.g. urls for pushing and fetching data
 
 
+git pull origin master -> pulling data from remote repository to the local
+
+
+
 How did viewing a diff between two versions of a file help you see the bug that was introduced?
 Finding a difference between two files is a great tool to spot mistakes one might have made in a newer version of a file. 
 The viewing of a diff showed exactly what was the difference between the two files.
